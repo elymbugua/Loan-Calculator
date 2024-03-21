@@ -1,0 +1,125 @@
+﻿
+<!-- Welcome to html 5-->
+
+<!DOCTYPE html>
+
+<!-- Courtesy of Elijah mbugua -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title>The Loan Calculator</title>
+	
+	<!--[if IE]><script type="text/javascript" src="scripts/excanvas/excanvas.js"></script><![endif]-->
+	
+    <link rel="stylesheet" type="text/css" href="styles/loancalculator.css" />
+    <link rel="stylesheet" type="text/css" href="scripts/jquery/jqueryui/jquery_ui/themes/base/jquery.ui.all.css"/>
+	<link rel="stylesheet" type="text/css" href="scripts/jquery/jqueryui/jquery_ui/themes/base/jquery.ui.slider"/>
+
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg"/>
+    
+    <script type="text/javascript" src="scripts/jquery/jqueryui/jquery_ui/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jqueryui/jquery_ui/ui/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jqueryui/jquery_ui/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jqueryui/jquery_ui/ui/jquery.ui.mouse.js"></script>
+	 <script type="text/javascript" src="scripts/jquery/jqueryui/jquery_ui/ui/jquery.ui.slider.js"></script>	
+        
+    <script type="text/javascript" src="scripts/loancalculator.js"></script>   
+    
+</head>
+
+<body onload="drawchart();">
+
+<h3>The Loan Calculator</h3>
+
+
+
+<div id="calcholder">
+
+	<div>
+	
+	<div id="amount_display_holder">
+		<span id="amount_display"></span>
+	</div>
+	
+	<div id="scale_inc_holder">
+	
+	<span id="inc_amount_label">Adjust Amount</span>
+	
+	<select id="amount_intervals">
+	<option selected="selected" value="1">0 - 150&nbsp;&pound;</option>
+	<option value="2">150 - 300&nbsp;&pound;</option>
+	<option value="3">300 - 450&nbsp;&pound;</option>
+	</select>
+	
+	</div>
+	
+		<div id="time_inc">
+			<span id="time_adjust">Adjust Time</span>
+			<a href="#"><img src="images/time_inc_minus.jpg" alt="Reduce Time" id="timeminus" title="Reduce Time Range"/></a>
+			<span id="timelabel">0 - 15 days</span>
+			<a href="#"><img src="images/time_inc_plus.jpg" alt="Increase Time" id="timeplus" title="Increase Time Range"></a>
+		</div>	
+	
+	</div>
+
+	<div id="y_label_holder">
+		<span id="xlabel">HOW <br />MUCH(&pound;)</span>
+	</div>
+	
+	<div id="v_scale_holder">
+	
+	<div id="p_amount_holder">
+		<span id="p_amount">principle</span>
+	</div>
+	
+    <div id="slider_v">	
+
+    </div>
+	
+	<div id="v_lock">
+		<span>LOCK</span>
+	</div>
+	
+	</div>
+	
+	<div id="calc_chart_holder">
+	
+    <canvas id="calc_chart" width="620px" height="420px">          
+
+    </canvas> 
+	
+	</div>
+	
+	<div id="button_holder">
+			<input type="button" id="takeloan" value="Take Loan"/>	
+			<div id="content_holder">content holder</div>
+	</div>
+	
+	<div id="h_scale_holder">	
+	
+	<div id="h_lock">
+		<span>LOCK</span>
+	</div>
+	
+	<div id="slider_h">
+	
+	</div>
+	
+	<div id="days_holder">
+		<span id="days">days</span>
+	</div>
+	
+	</div>
+	
+	<div id="x_label_holder">
+		<span id="ylabel">HOW LONG(DAYS)</span>		
+	</div>	
+
+</div>
+
+
+</body>
+
+</html>

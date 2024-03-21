@@ -1,0 +1,15 @@
+
+//- comments
+
+// The actual variable names appear on the right side of the equal sign.The values they represent appear on the left side.
+
+principle=principle
+
+days=time
+
+interest=interest_rate
+
+Total amount=total_amount
+
+daily repayment=daily_repayment
+
